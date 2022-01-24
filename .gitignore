@@ -6517,3 +6517,18 @@ tags
 [._]*.un~
 ./Photos
 ./Copy\of\Datas
+!/after.csv
+
+!/captions.csv
+!/category_notebook_netbook_ultrabook.csv
+!/README.md
+!/tipjoo
+!/Tipjoo Crawler.py
+!/category_wemon_shirts.csv
+!/check_repeated.py
+!/crawl_from_digikala.py
+!/download_images.py
+!/main.py
+!/rename_images.py
+!/sorter.py
+
