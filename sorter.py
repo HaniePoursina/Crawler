@@ -1,11 +1,16 @@
 from pandas import read_csv
 import pandas as pd
-data = read_csv("category_wemon_shirts.csv")
-images = data['image']
+df = read_csv("category_notebook_netbook_ultrabook.csv")
+counter = 0
+images = df['images']
+urls = df['urls']
 iamge_path = []
-for image in images:
-    filename = image.split("/")[-3] + ".jpg"
-    iamge_path.append("./Photos/Wemon_Shirts" + filename)
-dict = {'path': iamge_path}
+for url in urls:
+    counter += 1
+    result = df.loc[df['urls'] == url, 'images'].values[0]
+    folder_name = './Photos/notbook_ultabook/' + url.split("/")[-1] + '/'
+    path_dst_result = folder_name + result.split("/")[-3] + str(counter) + '.jpg'
+    iamge_path.append(path_dst_result)
+dict = {'urls' : urls,'images': images, 'path': iamge_path}
 df = pd.DataFrame(dict)
-df.to_csv('category_wemon_shirts.csv', index=False)
+df.to_csv('category_notebook_netbook_ultrabook.csv', index=False)
