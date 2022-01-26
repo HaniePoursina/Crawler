@@ -19,7 +19,7 @@ def getDuplicatesWithCount(listOfElems):
     # Returns a dict of duplicate elements and thier frequency count
     return dictOfElems
 
-datas = read_csv("category_wemon_shirts.csv")
+datas = read_csv("CSV-Files/category_wemon_shirts.csv")
 data = datas['urls'].tolist()
 names = [(item.split("/")[-1]) for item in data]
 i = 0

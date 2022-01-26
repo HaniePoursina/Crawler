@@ -21,7 +21,7 @@ import shutil
 #             handler.write(img_data)
 #         handler.close()
 counter = 0
-df = pd.read_csv("category_notebook_netbook_ultrabook.csv")
+df = pd.read_csv("CSV-Files/category_notebook_netbook_ultrabook.csv")
 images = df['images']
 urls = df['urls']
 path = []
@@ -68,4 +68,4 @@ for url in urls:
             handler.close()
 dict = {'urls' : urls,'images': images, 'path': path}
 df = pd.DataFrame(dict)
-df.to_csv('category_notebook_netbook_ultrabook.csv', index=False)
+df.to_csv('CSV-Files/category_notebook_netbook_ultrabook.csv', index=False)
