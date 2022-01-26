@@ -6526,4 +6526,11 @@ tags
 !/main.py
 !/rename_images.py
 !/sorter.py
-!/CSV-Files/*
+
+!/CSV-Files/category-book.csv
+!/CSV-Files/category-handicraft.csv
+!/CSV-Files/category-musicalinstruments.csv
+!/CSV-Files/category-stationery.csv
+!/CSV-Files/category_notebook_netbook_ultrabook.csv
+!/CSV-Files/category_wemon_shirts.csv
+
